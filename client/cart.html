@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>shopping cart</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="../css/style.css">
+
+   <script src="../js/script.js" defer></script>
+   <script type="module" src="../js/cart.js"></script>
+   <script type="module" src="../js/js-page/footer.js"></script>
+   <script type="module" src="../js/js-page/header.js"></script>
+</head>
+<body>
+   
+<header class="header" id="header-temp"></header>
+
+
+<section class="heading">
+    <h3>shopping cart</h3>
+    <p> <a href="home.html">home</a> / cart </p>
+</section>
+
+<section class="shopping-cart">
+
+    <h1 class="title" id="display">products added</h1>
+
+    <div class="box-container" id="item-container">
+
+    </div>
+
+    <div class="more-btn">
+        <a id="remove-all" class="delete-btn <?html echo (₱grand_total > 1)?'':'disabled' ?>">delete all</a>
+    </div>
+
+    <div class="cart-total">
+        <p>grand total : <span id="total-display"></span></p>
+        <a href="shop.html" class="option-btn">continue shopping</a>
+        <a class="btn" id="checkout-btn">proceed to checkout</a>
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="footer" id="footer-temp"></section>
+
+</body>
+</html>
